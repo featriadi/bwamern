@@ -19,10 +19,11 @@ export default function Categories({ data }) {
                                 return (
                                     <div className="item column-3 row-1" key={`category-${index1}-item-${index2}`}>
                                         <div className="card">
-                                            {item.isPolular && ( <div className="tag">
-                                                Popular{" "} 
-                                                <span className="font-weight-light">Choice</span>
-                                            </div> 
+                                            {item.isPopular && ( 
+                                                <div className="tag">
+                                                    Popular{" "} 
+                                                    <span className="font-weight-light">Choice</span>
+                                                </div> 
                                             )}
                                             <figure className="img-wrapper" style={{height: 180}}>
                                                 <img src={item.imageUrl} alt={item.name} className="img-cover" />
